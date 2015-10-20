@@ -29,6 +29,7 @@ class AppKernel extends Kernel
             new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
             new Wallabag\UserBundle\WallabagUserBundle(),
             new Scheb\TwoFactorBundle\SchebTwoFactorBundle(),
+            new Wallabag\ImportBundle\WallabagImportBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
