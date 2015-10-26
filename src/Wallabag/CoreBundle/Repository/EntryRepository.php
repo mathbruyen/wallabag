@@ -179,4 +179,21 @@ class EntryRepository extends EntityRepository
             ->getQuery()
             ->getSingleResult();
     }
+
+    /**
+     * Find an entry by its url and its owner.
+     *
+     * @param $url
+     * @param $userId
+     *
+     * @return array
+     */
+    public function findOneByUrlAndUserId($url, $userId)
+    {
+        return $this->createQueryBuilder('e')
+            ->where('e.url = :url')->setParameter('url', $url)
+            ->andWhere('e.user = :user_id')->setParameter('user_id', $userId)
+            ->getQuery()
+            ->getResult();
+    }
 }
