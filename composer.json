@@ -98,6 +98,7 @@
             "file": "app/config/parameters.yml",
             "env-map": {
                 "mailer_host": "WALLABAG_MAILER_HOST",
+                "mailer_port": "WALLABAG_MAILER_PORT",
                 "mailer_user": "WALLABAG_MAILER_USER",
                 "mailer_password": "WALLABAG_MAILER_PASSWORD",
                 "secret": "WALLABAG_SECRET"
