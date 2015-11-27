@@ -21,6 +21,7 @@ parameters:
     mailer_host:       127.0.0.1
     mailer_user:       ~
     mailer_password:   ~
+    mailer_port:       25
 
     locale:            en
 
